@@ -1,6 +1,6 @@
 # Apprendre le deep learning avec MNIST
 
-Ce projet est un parcours d'apprentissage du deep learning avec **PyTorch** et le jeu de données **MNIST**. Le travail est présenté progressivement dans un notebook Jupyter.
+Ce projet est un parcours d'apprentissage du deep learning avec **PyTorch** et le jeu de données **MNIST**. Le travail est présenté progressivement dans un notebook Jupyter et dans un script Python autonome.
 
 ## Objectifs
 
@@ -26,6 +26,8 @@ Le notebook [`mnist_torch.ipynb`](./mnist_torch.ipynb) contient :
 6. L'évaluation sur le jeu de test, l'affichage de prédictions incorrectes et la matrice de confusion.
 7. Trois époques d'entraînement supplémentaires.
 
+Le script [`mnist_torch.py`](./mnist_torch.py) rassemble ces étapes dans un programme exécutable de bout en bout. Il charge les données, entraîne le MLP, évalue ses résultats, affiche les erreurs et la matrice de confusion, puis effectue trois époques supplémentaires.
+
 ## Résultat obtenu
 
 Après ces trois époques supplémentaires, le MLP a obtenu **96,3 % d'exactitude sur le jeu de test**. Ce résultat correspond à l'exécution actuelle du notebook et peut varier légèrement selon la configuration et l'aléatoire de l'entraînement.
@@ -33,8 +35,8 @@ Après ces trois époques supplémentaires, le MLP a obtenu **96,3 % d'exactitud
 ## Prérequis
 
 - Python 3
-- Jupyter Notebook ou Visual Studio Code avec l'extension Jupyter
 - PyTorch, Torchvision et Matplotlib
+- Jupyter Notebook ou Visual Studio Code avec l'extension Jupyter (pour le notebook)
 
 Installation des dépendances :
 
@@ -43,6 +45,14 @@ python -m pip install torch torchvision matplotlib jupyter
 ```
 
 ## Exécution
+
+Pour exécuter le script :
+
+```bash
+python mnist_torch.py
+```
+
+Pour suivre les étapes dans le notebook :
 
 1. Ouvrir `mnist_torch.ipynb` dans Jupyter ou Visual Studio Code.
 2. Sélectionner un environnement Python où les dépendances sont installées.
